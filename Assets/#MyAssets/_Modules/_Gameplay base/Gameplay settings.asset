@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab0dc20eab6f76940847a4b17ca3e439, type: 3}
+  m_Name: Gameplay settings
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  skins:
+  - {fileID: 21300000, guid: d64a066466c4ed54c8a5ea410bf9744e, type: 3}
+  - {fileID: 21300000, guid: 766eb25dd5831994a97f8cc7536ab817, type: 3}
+  - {fileID: 21300000, guid: 48d1907e186d7dd438356ee3d8d58905, type: 3}
+  forwardSpeed: 2.5
+  rightLeftAcceleration: 0.035
+  spawnInterval: 0.66
+  spawnXPos: {x: -2.2, y: 2.2}
+  movementToScoreMultiplyer: 6
+  screenOrientation: 1
+  winScreenDelay: 0
+  stopTimeOnWinScreen: 1
+  privacyPolicyLink: 
