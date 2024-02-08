@@ -19,7 +19,7 @@ MonoBehaviour:
   appName: Yummy Parcel
   company: Enigma Sphere Games
   packageName: com.EnigmaSphereGames.YummyParcel
-  icon: {fileID: 2800000, guid: 0812a9977260deb43b2538497d648902, type: 3}
+  icon: {fileID: 2800000, guid: 5b36024c6e88a274f878ce30c8014bf0, type: 3}
   devKey: 
   config: 
   privacyPolicy: 

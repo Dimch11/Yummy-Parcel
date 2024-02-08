@@ -25,12 +25,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: d64a066466c4ed54c8a5ea410bf9744e, type: 3}
   - {fileID: 21300000, guid: 766eb25dd5831994a97f8cc7536ab817, type: 3}
   - {fileID: 21300000, guid: 48d1907e186d7dd438356ee3d8d58905, type: 3}
-  forwardSpeed: 2.5
-  rightLeftAcceleration: 0.035
-  spawnInterval: 0.66
-  spawnXPos: {x: -2.2, y: 2.2}
-  movementToScoreMultiplyer: 6
-  screenOrientation: 1
+  speed: 10
+  numberOfLevels: 6
+  screenOrientation: 4
   winScreenDelay: 0
   stopTimeOnWinScreen: 1
   privacyPolicyLink: 

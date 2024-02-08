@@ -11,16 +11,10 @@ public class GameplaySettings : SerializedScriptableObject
 {
     public List<Sprite> skins;
 
-    public float forwardSpeed;
-    public float rightLeftAcceleration;
-
-    public float spawnInterval;
-    public Vector2 spawnXPos;
-
-    public float movementToScoreMultiplyer;
+    public float speed;
 
     [Header("General")]
-    //public int numberOfLevels;
+    public int numberOfLevels;
     public ScreenOrientation screenOrientation = ScreenOrientation.Portrait;
     public float winScreenDelay;
     public bool stopTimeOnWinScreen;

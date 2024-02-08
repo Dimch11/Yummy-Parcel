@@ -25,7 +25,7 @@ public class ScoreFromMovement : MonoBehaviour
                 curPos = transform.position;
 
                 var distance = Vector3.Distance(prevPos, curPos);
-                score.AddToScore(distance * gameplaySettings.movementToScoreMultiplyer);
+                //score.AddToScore(distance * gameplaySettings.movementToScoreMultiplyer);
             })
             .AddTo(this);
     }

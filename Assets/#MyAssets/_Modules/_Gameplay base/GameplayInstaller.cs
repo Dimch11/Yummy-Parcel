@@ -7,6 +7,7 @@ public class GameplayInstaller : MonoInstaller
 {
     public ResultScreen resultScreen;
     public InputPanel inputPanel;
+    public ArrowController arrowController;
 
     public override void InstallBindings()
     {
@@ -14,6 +15,8 @@ public class GameplayInstaller : MonoInstaller
         BindFromInstance(resultScreen);
         BindFromInstance(inputPanel);
         BindFromNew<GameEnder>();
+
+        BindFromInstance(arrowController);
 
         Time.timeScale = 1;
     }
