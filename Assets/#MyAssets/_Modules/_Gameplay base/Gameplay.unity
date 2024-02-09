@@ -946,7 +946,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 1
+      value: 0.5
       mode: 0
       spread: 0
       speed:
@@ -1248,7 +1248,7 @@ ParticleSystem:
           inWeight: 0.33333334
           outWeight: 0.33333334
         - serializedVersion: 3
-          time: 1
+          time: 0.9980469
           value: 0
           inSlope: -3.1134384
           outSlope: -3.1134384
@@ -6633,7 +6633,7 @@ GameObject:
   - component: {fileID: 5956035246814007605}
   m_Layer: 0
   m_Name: Player block
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
