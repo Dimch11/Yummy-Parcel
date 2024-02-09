@@ -25,7 +25,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: d64a066466c4ed54c8a5ea410bf9744e, type: 3}
   - {fileID: 21300000, guid: 766eb25dd5831994a97f8cc7536ab817, type: 3}
   - {fileID: 21300000, guid: 48d1907e186d7dd438356ee3d8d58905, type: 3}
-  speed: 10
+  speed: 40
   numberOfLevels: 6
   screenOrientation: 4
   winScreenDelay: 0

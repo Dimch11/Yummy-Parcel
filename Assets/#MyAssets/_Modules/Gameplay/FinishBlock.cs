@@ -8,8 +8,11 @@ public class FinishBlock : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
             GetComponent<SpriteRenderer>().maskInteraction = SpriteMaskInteraction.VisibleInsideMask;
             GetComponentInChildren<ParticleSystem>().Play();
+
+
         }
     }
 }
