@@ -8,7 +8,18 @@ public class StaticBlock : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            collision.gameObject.GetComponent<PlayerBlock>().canJump = true;
+            collision.gameObject.GetComponent<PlayerBlock>().touchesStaticBlock = true;
+            collision.gameObject.GetComponent<PlayerBlock>().SetStandartCollider();
+            Debug.Log("enter");
+        }
+    }
+
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            collision.gameObject.GetComponent<PlayerBlock>().touchesStaticBlock = false;
+            Debug.Log("exit");
         }
     }
 }

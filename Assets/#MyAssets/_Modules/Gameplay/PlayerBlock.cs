@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using Zenject;
 public class PlayerBlock : MonoBehaviour
 {
     [HideInInspector]
-    public bool canJump = true;
+    public bool touchesStaticBlock = true;
 
     Rigidbody2D rb;
 
@@ -22,39 +23,53 @@ public class PlayerBlock : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
 
         arrowController.left
-            .Where(_ => canJump)
+            .Where(_ => touchesStaticBlock)
             .Subscribe(_ =>
             {
-                canJump = false;
+                rb.constraints = RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
                 rb.velocity = Vector2.left * gameplaySettings.speed;
+                SetSmallerCollider();
             })
             .AddTo(this);
 
         arrowController.right
-            .Where(_ => canJump)
+            .Where(_ => touchesStaticBlock)
             .Subscribe(_ =>
             {
-                canJump = false;
+                rb.constraints = RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
                 rb.velocity = Vector2.right * gameplaySettings.speed;
+                SetSmallerCollider();
             })
             .AddTo(this);
 
         arrowController.up
-            .Where(_ => canJump)
+            .Where(_ => touchesStaticBlock)
             .Subscribe(_ =>
             {
-                canJump = false;
+                rb.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
                 rb.velocity = Vector2.up * gameplaySettings.speed;
+                SetSmallerCollider();
             })
             .AddTo(this);
 
         arrowController.down
-            .Where(_ => canJump)
+            .Where(_ => touchesStaticBlock)
             .Subscribe(_ =>
             {
-                canJump = false;
+                rb.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
                 rb.velocity = Vector2.down * gameplaySettings.speed;
+                SetSmallerCollider();
             })
             .AddTo(this);
+    }
+
+    public void SetSmallerCollider()
+    {
+        transform.DOScale(0.98f, 0f).SetLink(gameObject);
+    }
+
+    public void SetStandartCollider()
+    {
+        transform.DOScale(1f, 0.1f).SetLink(gameObject);
     }
 }

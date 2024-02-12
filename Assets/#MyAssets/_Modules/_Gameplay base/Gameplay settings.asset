@@ -28,6 +28,6 @@ MonoBehaviour:
   speed: 40
   numberOfLevels: 6
   screenOrientation: 4
-  winScreenDelay: 0
-  stopTimeOnWinScreen: 1
+  winScreenDelay: 0.66
+  stopTimeOnWinScreen: 0
   privacyPolicyLink: 

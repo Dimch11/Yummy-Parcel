@@ -10,12 +10,18 @@ public class GameEnder
 
     [Inject]
     ResultScreen resultScreen;
+    [Inject]
+    CurrentLevel currentLevel;
+    [Inject]
+    PlayerProgress playerProgress;
 
-    public void EndGame()
+    public void Win()
     {
         if (!gameOver.Value)
         {
             gameOver.Value = true;
+
+            playerProgress.SetLevelState(currentLevel.Num, new LevelState(true));
 
             resultScreen.Show();
         }
