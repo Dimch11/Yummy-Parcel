@@ -10,7 +10,6 @@ public class StaticBlock : MonoBehaviour
         {
             collision.gameObject.GetComponent<PlayerBlock>().touchesStaticBlock = true;
             collision.gameObject.GetComponent<PlayerBlock>().SetStandartCollider();
-            Debug.Log("enter");
         }
     }
 
@@ -19,7 +18,6 @@ public class StaticBlock : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             collision.gameObject.GetComponent<PlayerBlock>().touchesStaticBlock = false;
-            Debug.Log("exit");
         }
     }
 }

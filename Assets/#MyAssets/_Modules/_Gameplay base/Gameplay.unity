@@ -1470,7 +1470,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &439752664
 Transform:
   m_ObjectHideFlags: 0
@@ -5528,6 +5528,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2104234477}
+  - component: {fileID: 2104234478}
   m_Layer: 0
   m_Name: Levels
   m_TagString: Untagged
@@ -5556,6 +5557,25 @@ Transform:
   - {fileID: 439752664}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2104234478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104234476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7687debe2ca6b1488e5e59fede12056, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levels:
+  - {fileID: 1481920989}
+  - {fileID: 2075969729}
+  - {fileID: 1369367946}
+  - {fileID: 919702976}
+  - {fileID: 807566630}
+  - {fileID: 439752663}
 --- !u!1 &2104396742
 GameObject:
   m_ObjectHideFlags: 0
