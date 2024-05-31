@@ -1,4 +1,4 @@
-using OPS.Obfuscator.Attribute;
+//using OPS.Obfuscator.Attribute;
 using Sirenix.OdinInspector;
 using System;
 using System.Collections.Generic;
@@ -6,7 +6,7 @@ using TMPro;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "ScriptableObjects/" + nameof(GameplaySettings))]
-[DoNotObfuscateClass]
+//[DoNotObfuscateClass]
 public class GameplaySettings : SerializedScriptableObject
 {
     public List<Sprite> skins;

@@ -1,4 +1,4 @@
-using OPS.Obfuscator.Attribute;
+//using OPS.Obfuscator.Attribute;
 using Sirenix.OdinInspector;
 using System;
 using System.Collections.Generic;
@@ -17,7 +17,7 @@ public enum Scenes
     Shop
 }
 
-[DoNotObfuscateClass]
+//[DoNotObfuscateClass]
 [CreateAssetMenu(menuName = "ScriptableObjects/" + nameof(ScenesController))]
 public class ScenesController : SerializedScriptableObject
 {

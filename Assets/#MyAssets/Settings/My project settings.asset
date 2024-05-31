@@ -22,6 +22,6 @@ MonoBehaviour:
   icon: {fileID: 2800000, guid: 5b36024c6e88a274f878ce30c8014bf0, type: 3}
   devKey: 
   config: 
-  privacyPolicy: 
+  privacyPolicy: https://yummyparrcell.com/privacy-policy.html
   keyStorePassword: zLcVl1jjPEEr5byOdTg
   build: Release build set
